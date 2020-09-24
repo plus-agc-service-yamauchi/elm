@@ -34,6 +34,48 @@
       .notosans {
         font-family: "Sawarabi Gothic", sans-serif !important;
       }
+
+      /* 大デバイス（デスクトップ,
+    1200px 未満） */
+      @media (min-width: 992px) {
+        .title {
+          font-size: 1.2rem;
+        }
+        .mb-1 {
+          margin-bottom: 1em !important;
+        }
+        .mb-3 {
+          margin-bottom: 1.5em !important;
+        }
+      }
+
+      /* 中デバイス（タブレット, 992px 未満）*/
+      @media (max-width: 991.98px) {
+        .title {
+          font-size: 0.8rem;
+        }
+        .logo-s {
+          width: 80%;
+          margin-bottom: 1em;
+        }
+      }
+
+      /* 小デバイス（横向きモバイル, 768px 未満）*/
+      @media (max-width: 767.98px) {
+        .title {
+          font-size: 0.8rem;
+        }
+        .logo-s {
+          width: 70%;
+          margin: 0 auto;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .title {
+          font-size: 0.9rem;
+        }
+      }
     </style>
   </head>
 
@@ -58,19 +100,9 @@
             <div class="row align-items-center mt-5">
               <!-- Logo -->
               <div class="col-xl-3 col-lg-3 col-md-6">
-                <div class="logo">
+                <div class="logo text-center">
                   <a href="index.html"
-                    ><img
-                      src="img/logo.png"
-                      alt=""
-                      class="img-fluid d-none d-md-block"
-                  /></a>
-                  <a href="index.html"
-                    ><img
-                      src="img/logo.png"
-                      alt=""
-                      width="200"
-                      class="d-block d-sm-none mx-auto"
+                    ><img src="img/logo.png" alt="" class="img-fluid logo-s"
                   /></a>
                 </div>
               </div>
@@ -92,7 +124,7 @@
               </div>
               <a
                 href="http://www.elm-no-machi.jp"
-                class="header-btn fixed-bottom text-center d-block d-md-none"
+                class="header-btn fixed-bottom text-center d-block d-lg-none"
                 style="border-radius: 0"
                 >ELMサイトへ戻る</a
               >
@@ -117,7 +149,7 @@
                     <i class="fas fa-play"></i>
                   </a>
                 </div> -->
-                  <div class="hero__caption text-center d-none d-md-block">
+                  <div class="hero__caption text-center mt-5">
                     <h1
                       data-animation="fadeInUp"
                       data-delay=".3s"
@@ -128,129 +160,72 @@
                     <p
                       data-animation="fadeInUp"
                       data-delay=".6s"
-                      class="lead notosans p-0 mb-1"
+                      class="title lead notosans p-0 mb-1"
                     >
                       ライフスタイルの変化によって生まれた
                     </p>
                     <p
                       data-animation="fadeInUp"
                       data-delay=".6s"
-                      class="lead notosans p-0 mb-1"
+                      class="title lead notosans p-0 mb-1"
                     >
                       新たな悩み、
                     </p>
                     <p
                       data-animation="fadeInUp"
                       data-delay=".6s"
-                      class="lead notosans p-0 mb-1"
+                      class="title lead notosans p-0 mb-1"
                     >
                       何かにとらわれないくらしの仕方など、
                     </p>
                     <p
                       data-animation="fadeInUp"
                       data-delay=".6s"
-                      class="lead notosans p-0 mb-1"
+                      class="title lead notosans p-0 mb-3"
                     >
                       これまでとは違う生活。
                     </p>
                     <p
                       data-animation="fadeInUp"
                       data-delay=".6s"
-                      class="lead notosans p-0 mb-1"
+                      class="title lead notosans p-0 mb-1"
                     >
                       そんな生活がちょっとしたアイテムや工夫で
                     </p>
                     <p
                       data-animation="fadeInUp"
                       data-delay=".6s"
-                      class="lead notosans p-0 mb-3"
+                      class="title lead notosans p-0 mb-4"
                     >
                       もっと充実したものになるかもしれません。
                     </p>
                     <p
                       data-animation="fadeInUp"
                       data-delay=".6s"
-                      class="lead notosans p-0 m-0"
+                      class="title lead notosans p-0 m-0"
                     >
                       あなたのくらしがもっとゆたかで楽しくなるよう、
                     </p>
                     <p
                       data-animation="fadeInUp"
                       data-delay=".6s"
-                      class="lead notosans p-0 mb-5"
+                      class="title lead notosans p-0 mb-5"
                     >
                       ELMが応援していきます。
                     </p>
                     <h1 class="p-0 m-0">
-                      <img src="img/topLogo_l.png" alt="" class="mx-auto" />
-                    </h1>
-                  </div>
-                  <div class="hero__caption text-center d-block d-sm-none">
-                    <h1
-                      data-animation="fadeInUp"
-                      data-delay=".3s"
-                      class="notosans mb-5"
-                    >
-                      くらしをゆたかに。
-                    </h1>
-                    <p
-                      data-animation="fadeInUp"
-                      data-delay=".6s"
-                      class="notosans p-0 mb-1"
-                    >
-                      ライフスタイルの変化によって生まれた
-                    </p>
-                    <p
-                      data-animation="fadeInUp"
-                      data-delay=".6s"
-                      class="notosans p-0 mb-1"
-                    >
-                      新たな悩み、
-                    </p>
-                    <p
-                      data-animation="fadeInUp"
-                      data-delay=".6s"
-                      class="notosans p-0 mb-1"
-                    >
-                      何かにとらわれないくらしの仕方など、
-                    </p>
-                    <p
-                      data-animation="fadeInUp"
-                      data-delay=".6s"
-                      class="notosans p-0 mb-1"
-                    >
-                      これまでとは違う生活。
-                    </p>
-                    <p
-                      data-animation="fadeInUp"
-                      data-delay=".6s"
-                      class="notosans p-0 mb-1"
-                    >
-                      そんな生活がちょっとしたアイテムや工夫で
-                    </p>
-                    <p
-                      data-animation="fadeInUp"
-                      data-delay=".6s"
-                      class="notosans p-0 mb-3"
-                    >
-                      もっと充実したものになるかもしれません。
-                    </p>
-                    <p
-                      data-animation="fadeInUp"
-                      data-delay=".6s"
-                      class="notosans p-0 m-0"
-                    >
-                      あなたのくらしがもっとゆたかで楽しくなるよう、
-                    </p>
-                    <p
-                      data-animation="fadeInUp"
-                      data-delay=".6s"
-                      class="notosans p-0 mb-5"
-                    >
-                      ELMが応援していきます。
-                    </p>
-                    <h1 class="p-0 m-0">
-                      <img src="img/topLogo_l.png" alt="" class="mx-auto" />
+                      <img
+                        src="img/topLogo_l.png"
+                        alt=""
+                        class="mx-auto d-none d-sm-block"
+                        width="200"
+                      />
+                      <img
+                        src="img/topLogo_l.png"
+                        alt=""
+                        class="mx-auto d-block d-sm-none"
+                        width="120"
+                      />
                     </h1>
                   </div>
                 </div>
@@ -271,8 +246,13 @@
             <div class="cl-xl-7 col-lg-8 col-md-10">
               <!-- Section Tittle -->
               <div class="section-tittle text-center mb-70">
-                <h3 class="notosans">
-                  今だからできる<br class="d-lg-none" />「新ライフスタイル」を。
+                <h3 class="notosans d-block d-sm-none" style="font-size: 100%">
+                  WEBマガジンにてELMが提案する<br
+                    class="d-lg-none"
+                  />「新ライフスタイル」をご覧いただけます。
+                </h3>
+                <h3 class="notosans d-none d-md-block">
+                  WEBマガジンにてELMが提案する<br />「新ライフスタイル」をご覧いただけます。
                 </h3>
               </div>
             </div>
@@ -286,7 +266,7 @@
                   </div>
                   <div class="services-cap mt-3">
                     <h5>Vol.1</h5>
-                    <p>マスクメイクのお悩み解決</p>
+                    <p>マスクメイクのお悩み解決♡</p>
                   </div>
                 </div>
               </a>
@@ -306,91 +286,9 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="single-services text-center mb-30">
-                <div class="services-ion">
-                  <i
-                    class="fas fa-question fa-5x mb-3"
-                    data-animation="bounceIn"
-                    data-delay=".4s"
-                  ></i>
-                </div>
-                <div class="services-cap">
-                  <h5><a href="#">vol.3</a></h5>
-                  <p>Coming Soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="single-services text-center mb-30">
-                <div class="services-ion">
-                  <i
-                    class="fas fa-question fa-5x mb-3"
-                    data-animation="bounceIn"
-                    data-delay=".4s"
-                  ></i>
-                </div>
-                <div class="services-cap">
-                  <h5><a href="#">vol.4</a></h5>
-                  <p>Coming Soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="single-services text-center mb-30">
-                <div class="services-ion">
-                  <i
-                    class="fas fa-question fa-5x mb-3"
-                    data-animation="bounceIn"
-                    data-delay=".4s"
-                  ></i>
-                </div>
-                <div class="services-cap">
-                  <h5><a href="#">vol.5</a></h5>
-                  <p>Coming Soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="single-services text-center mb-30">
-                <div class="services-ion">
-                  <i
-                    class="fas fa-question fa-5x mb-3"
-                    data-animation="bounceIn"
-                    data-delay=".4s"
-                  ></i>
-                </div>
-                <div class="services-cap">
-                  <h5><a href="#">vol.6</a></h5>
-                  <p>Coming Soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="single-services text-center mb-30">
-                <div class="services-ion">
-                  <i
-                    class="fas fa-question fa-5x mb-3"
-                    data-animation="bounceIn"
-                    data-delay=".4s"
-                  ></i>
-                </div>
-                <div class="services-cap">
-                  <h5><a href="#">vol.7</a></h5>
-                  <p>Coming Soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="single-services text-center mb-30">
-                <div class="services-ion">
-                  <i
-                    class="fas fa-question fa-5x mb-3"
-                    data-animation="bounceIn"
-                    data-delay=".4s"
-                  ></i>
-                </div>
-                <div class="services-cap">
-                  <h5><a href="#">vol.8</a></h5>
-                  <p>Coming Soon</p>
+                <div style="padding: 93px 0">
+                  <h4><a href="#">Vol.3</a></h4>
+                  <h3>Coming Soon</h3>
                 </div>
               </div>
             </div>
@@ -420,12 +318,9 @@
     <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-    <!-- Jquery Mobile Menu -->
-    <script src="./assets/js/jquery.slicknav.min.js"></script>
     <!-- One Page, Animated-HeadLin -->
     <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/animated.headline.js"></script>
-    <script src="./assets/js/jquery.magnific-popup.js"></script>
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
