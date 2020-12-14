@@ -7,10 +7,12 @@
     <script>
         window.dataLayer = window.dataLayer || [];
 
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-68817842-1');
+      gtag("config", "UA-68817842-1");
     </script>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -25,7 +27,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="assets/css/themify-icons.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom.css" />
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet" />
     <style>
@@ -196,12 +198,47 @@
                             <h3 class="notosans d-none d-md-block">
                                 WEBマガジンにてELMが提案する<br />「新ライフスタイル」をご覧いただけます。
                             </h3>
-                            <h4 class="text-danger view_timer">次回11月26日更新予定！！</h4>
+                            <h4 class="text-danger view_timer" data-start-date="2020/11/26 0:00" data-end-date="2020/12/13 23:59">
+                                次回12月14日更新予定！！
+                            </h4>
+                            <h4 class="text-danger view_timer" data-start-date="2020/11/09 0:00" data-end-date="2020/11/25 23:59">
+                                次回11月26日更新予定！！
+                            </h4>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6 mark-box view_timer">
+                    <div class="col-lg-4 col-md-6 col-sm-6 mark-box view_timer" data-start-date="2020/11/26 0:00">
+                        <a href="vol9.html" target="_blank">
+                            <div class="single-services text-center mb-30">
+                                <div class="services-ion">
+                                    <!-- 1073 × 605 -->
+                                    <img src="img/vol9.jpg" alt="冬の防災グッズコレクション" class="img-fluid" />
+                                </div>
+                                <div class="services-cap mt-3">
+                                    <h5>Vol.9</h5>
+                                    <p class="mb-0 pb-0">冬の防災グッズ</p>
+                                    <p class="mb-0 pb-0">コレクション</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mark-box view_timer" data-start-date="2020/11/26 0:00">
+                        <a href="vol8.html" target="_blank">
+                            <div class="single-services text-center mb-30">
+                                <div class="services-ion">
+                                    <!-- 1073 × 605 -->
+                                    <img src="img/vol8.jpg" alt="年末お掃除グッズ大集合" class="img-fluid" />
+                                </div>
+                                <div class="services-cap mt-3">
+                                    <h5>Vol.8</h5>
+                                    <p class="mb-0 pb-0">年末お掃除グッズ</p>
+                                    <p class="mb-0 pb-0">大集合</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6" data-start-date="2020/11/09 0:00">
                         <a href="vol7.html" target="_blank">
                             <div class="single-services text-center mb-30">
                                 <div class="services-ion">
@@ -210,12 +247,13 @@
                                 </div>
                                 <div class="services-cap mt-3">
                                     <h5>Vol.7</h5>
-                                    <p>あったか機能グッズ<br>＆あったかフード</p>
+                                    <p class="mb-0 pb-0">あったか機能グッズ</p>
+                                    <p class="mb-0 pb-0">＆あったかフード</p>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 mark-box">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <a href="handcare.html" target="_blank">
                             <div class="single-services text-center mb-30">
                                 <div class="services-ion">
@@ -228,7 +266,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 mark-box">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <a href="cafe.html" target="_blank">
                             <div class="single-services text-center mb-30">
                                 <div class="services-ion">
@@ -236,13 +274,13 @@
                                 </div>
                                 <div class="services-cap mt-3">
                                     <h5>Vol.5</h5>
-                                    <p class=" mb-0">おうちでカフェ！</p>
+                                    <p class="mb-0">おうちでカフェ！</p>
                                     <p>おいしいコーヒー＆お茶の淹れ方</p>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 ">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <a href="roomitem.html" target="_blank">
                             <div class="single-services text-center mb-30">
                                 <div class="services-ion">
@@ -250,13 +288,13 @@
                                 </div>
                                 <div class="services-cap mt-3">
                                     <h5>Vol.4</h5>
-                                    <p class=" mb-0">お部屋を豊かに！</p>
+                                    <p class="mb-0">お部屋を豊かに！</p>
                                     <p>今一番欲しいお部屋機能アイテム！</p>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 ">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <a href="roomware.html" target="_blank">
                             <div class="single-services text-center mb-30">
                                 <div class="services-ion">
